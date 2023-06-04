@@ -6,10 +6,18 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lintfix": "eslint --fix --ext \".ts,.tsx,.vue\" --ignore-path .gitignore ."
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.5",
+    "@commitlint/config-conventional": "^17.6.5",
+    "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "@types/node": "^18",
-    "nuxt": "^3.5.2"
+    "eslint": "^8.42.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "nuxt": "^3.5.2",
+    "prettier": "^2.8.8"
   }
 }
