@@ -2,8 +2,10 @@
   "root": true,
   "extends": [
     "@nuxtjs/eslint-config-typescript",
-    "plugin:prettier/recommended"
+    "plugin:prettier/recommended",
+    "plugin:vitest/recommended"
   ],
+  "plugins": ["vitest"],
   "rules": {
     "vue/multi-word-component-names": "off",
     "vue/no-multiple-template-root": "off"

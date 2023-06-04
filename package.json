@@ -8,20 +8,32 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "lintfix": "eslint --fix --ext \".ts,.tsx,.vue\" --ignore-path .gitignore .",
+    "test": "vitest",
+    "testui": "vitest --ui",
+    "coverage": "vitest run --coverage",
     "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
     "@commitlint/config-conventional": "^17.6.5",
+    "@nuxt/test-utils": "^3.5.2",
     "@nuxtjs/eslint-config-typescript": "^11.0.0",
     "@types/node": "^18",
+    "@vitejs/plugin-vue": "^4.2.3",
+    "@vitest/coverage-c8": "^0.31.4",
+    "@vitest/ui": "^0.31.4",
+    "@vue/test-utils": "^2.3.2",
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vitest": "^0.2.5",
+    "happy-dom": "^9.20.3",
     "husky": "^8.0.0",
     "lint-staged": "^13.2.2",
     "nuxt": "^3.5.2",
-    "prettier": "^2.8.8"
+    "prettier": "^2.8.8",
+    "unplugin-auto-import": "^0.16.4",
+    "vitest": "^0.31.4"
   },
   "lint-staged": {
     "*.{ts,tsx,vue}": [
