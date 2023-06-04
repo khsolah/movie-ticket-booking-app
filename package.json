@@ -7,7 +7,8 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "lintfix": "eslint --fix --ext \".ts,.tsx,.vue\" --ignore-path .gitignore ."
+    "lintfix": "eslint --fix --ext \".ts,.tsx,.vue\" --ignore-path .gitignore .",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.5",
@@ -17,7 +18,14 @@
     "eslint": "^8.42.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
+    "lint-staged": "^13.2.2",
     "nuxt": "^3.5.2",
     "prettier": "^2.8.8"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,vue}": [
+      "eslint --fix --ext \".ts,.tsx,.vue\" --ignore-path .gitignore"
+    ]
   }
 }
